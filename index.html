@@ -6,12 +6,18 @@
 
     <title>Birthday Today</title>
 
-    <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css" integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/skeleton.min.css" />
     <link href="css/style.css" rel="stylesheet" />
   </head>
 
   <body>
-    <p>Sing happy birthday to <a href="#" id="person"></a></p>
+    <div id="layout" class="container">
+      <div class="row">
+        <div class="twelve column u-text-center">
+          <h1>Sing happy birthday to <em><a href="#" id="person"></a></em></h1>
+        </div>
+      </div>
+    </div>
     <script src="https://unpkg.com/papaparse"></script>
     <script src="js/main.js"></script>
   </body>
