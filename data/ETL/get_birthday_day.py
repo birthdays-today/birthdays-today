@@ -109,10 +109,9 @@ def parser(month_day):
     other_names = clean_other_names(raw_xpath_others)
     other_links = clean_other_links(raw_xpath_link_others)
 
-    #Temporary error checking
-    ###TO-DO add actual error catching and logging
-    """
-    Debugging code I'm leaving in for now
+    # Temporary error checking
+    ### TO-DO add actual error catching and logging
+    # Debugging code I'm leaving in for now
     print(len(raw_xpath_first))
     print(len(raw_xpath_link_first))
     print(len(other_names))
@@ -125,7 +124,7 @@ def parser(month_day):
         print(f"{index}: {value}")
     for index, value in enumerate(other_links):
         print(f"{index}: {value}")
-    """
+    # End debug code
     first_names, first_links = clean_check(raw_xpath_first, raw_xpath_link_first)
     other_names, other_links = clean_check(other_names, other_links)
 

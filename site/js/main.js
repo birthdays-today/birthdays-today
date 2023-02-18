@@ -5,7 +5,8 @@ const month = today.toLocaleString('default', { month: 'long' });
 const day = today.getDate();
 
 Papa.parse(
-  `https://storage.googleapis.com/singtowho.site/csv/${month}_${day}.csv`, {
+  //`https://storage.googleapis.com/singtowho.site/csv/${month}_${day}.csv`, {
+  `./csv/${month}_${day}.csv`, {
     download: true,
     header: true,
     complete: function(result) {
